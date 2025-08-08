@@ -22,7 +22,7 @@ h1, h2, h3 {
 
 /* Franja amarilla con línea azul */
 .amarillo {
-  background-color: #EFDE75; /* amarillo pastel */
+  background-color: #E9D300; /* amarillo pastel */
   height: 21px;
 }
 
@@ -98,7 +98,7 @@ nav ul li a {
 nav ul li a.sign-up {
   background-color: #000;
   font-family: var(--fuente-titular);
-  color: #ffff00;
+  color: #E9D300;
   padding: 5px 15px;
   border-radius: 50px;
 }
@@ -108,14 +108,14 @@ nav ul li a.sign-up {
   display: flex;
   justify-content: space-around;
   padding: 50px;
-  background-color: #ffff00;
+  background-color: #E9D300;
 }
 
 .carousel {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #E9D300; /* amarillo pastel */
+  background-color: #EFDE75; /* amarillo pastel */
   padding: 5px;
   overflow: hidden;
   border-top: 6px solid hotpink; /* franja rosa */
@@ -135,7 +135,7 @@ nav ul li a.sign-up {
   height: 280px;
   margin-right: 1px;
   background-color: white;
-  border: 2px solid #EFDE75;
+  border: 2px solid #E9D300;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -152,4 +152,17 @@ nav ul li a.sign-up {
   100% {
     transform: translateX(-50%);
   }
+}
+footer {
+  background: linear-gradient(to bottom, #E9D300 10%, #E9D300 20%, #E9D300 100%);
+  color: black;
+  text-align: center;
+  padding: 20px 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  border-top: 6px solid #EFDE75;
+}
+.amarillobb {
+  background-color: #EFDE75; /* amarillo pastel */
+  height: 500px;
 }
