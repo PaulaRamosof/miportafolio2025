@@ -14,4 +14,5 @@ Faltantes de mi Repositorio:
 2. NavBar
 *   Botones de navegación (color y tamaño); (de la navbar poner hover y letra); 
 *   Botones de navegación (color y tamaño); (Ingresar boton Inicio que conecte el head y hero)
+3. Solucionar el problema de renderización,validar si es por css duplicado o en desorden.
 
