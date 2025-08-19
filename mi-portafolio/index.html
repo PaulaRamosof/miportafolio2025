@@ -4,14 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portafolio Paula Ramos</title>
-  <link rel="stylesheet" href="css/styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Kanit:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lilita+One&display=swap" rel="stylesheet">    
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
+<!-- 🔶 Franja superior decorativa -->
+<section class="franja-superior" id="inicio">
+  <div class="amarillo"></div>
+</section>
 
 <!-- Navbar fija con scroll suave y enlaces conectados -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -22,18 +29,12 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
-        <li class="nav-item mx-3">
-          <a class="nav-link text-white" href="#sobre-mi">Sobre mi</a>
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link text-white" href="#habilidades">Habilidades</a>
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link text-white" href="#proyectos">Mis Proyectos</a>
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link text-white" href="#contacto">Contacto</a>
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center"> 
+          <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>      
+          <a class="nav-link" href="#sobre-mi">Sobre mi</a>
+          <a class="nav-link" href="#habilidades">Habilidades</a>        
+          <a class="nav-link" href="#proyectos">Mis Proyectos</a>
+          <a class="nav-link" href="#contacto">Contacto</a>
         </li>
       </ul>
     </div>
@@ -51,15 +52,12 @@
   });
 </script>
 
-  <!-- 🔶 Franja superior decorativa -->
-  <section class="franja-superior">
-    <div class="amarillo"></div>
-  </section>
+
 
 <!-- 🧠 Header con branding -->
 <header class="header">
   <video autoplay muted loop playsinline class="video-bg">
-    <source src="../mi-portafolio/assets/img/icons/fondoHero.mp4" type="video/mp4">
+    <source src="../mi-portafolio/assets/img/icons/videoHeader.mp4" type="video/mp4">
     Tu navegador no soporta videos HTML5.
   </video>
 
@@ -76,7 +74,7 @@
 <section class="hero" id="inicio">
   <div class="hero-content">
     <div class="hero-img">
-      <img src="tu-imagen.jpg" alt="Paula Ramos">
+      <img src="/mi-portafolio/assets/img/fotopaula.png" alt="Paula Ramos">
   </div>
   <div class="hero-text">
       <h1>¡Hola! Soy Paula Ramos 👋</h1>
@@ -91,14 +89,10 @@
   <h2 class="fade-slide">Sobre mí</h2>
   <p class="fade-slide delay-1">
     Soy Paula Ramos, desarrolladora junior en formación con enfoque en UX/UI, bases de datos y una curiosidad creciente por la inteligencia artificial.
-  </p>
-  <p class="fade-slide delay-2">
     Mi experiencia liderando equipos y procesos me enseñó a trabajar con datos, herramientas como Oracle y Excel, y a tomar decisiones con empatía y precisión.
   </p>
   <p class="fade-slide delay-3">
     Hoy, cada línea de código que escribo es parte de mi evolución: diseño accesible, desarrollo con propósito y tecnología como puente humano.
-  </p>
-  <p class="fade-slide delay-4">
     Este portafolio es mi punto de partida. Estoy aprendiendo, creciendo y lista para aportar.
   </p>
 </section>
@@ -136,7 +130,7 @@
   </div>
 
   <div class="cv-descarga fade-slide delay-3">
-    <a href="Paula_Ramos_CV.pdf" download class="btn-descarga">📄 Descargar CV</a>
+    <a href="CVversionfinal.pdf" download class="btn-descarga">📄 Descargar CV</a>
   </div>
 </section>
   <!-- Card de 6 proyectos -->
@@ -145,26 +139,26 @@
   <div class="grid-proyectos">
     
     <div class="card-proyecto">
-      <img src="img/proyecto1.png" alt="4 style Portfolio design">
-      <h3>4 style Portfolio design</h3>
+      <img src="img/proyecto1.png" alt="Bacanísimo">
+      <h3>Bacanísimo</h3>
       <p>Proyecto 1</p>
     </div>
 
     <div class="card-proyecto">
-      <img src="img/proyecto2.png" alt="Color system for app">
-      <h3>Color system for app</h3>
+      <img src="img/proyecto2.png" alt="ABC Ingles para niños">
+      <h3>ABC Ingles para niños</h3>
       <p>Proyecto 2</p>
     </div>
 
     <div class="card-proyecto">
-      <img src="img/proyecto3.png" alt="Onboarding screen process">
-      <h3>Onboarding screen process</h3>
+      <img src="img/proyecto3.png" alt="Proyecto JUNTO">
+      <h3>Proyecto JUNTO </h3>
       <p>Proyecto 3</p>
     </div>
 
     <div class="card-proyecto">
-      <img src="img/proyecto4.png" alt="Finance Landing page">
-      <h3>Finance Landing page</h3>
+      <img src="img/proyecto4.png" alt="Elige tu POKEMON">
+      <h3>Elige tu POKEMON</h3>
       <p>Proyecto 4</p>
     </div>
   </div>
@@ -178,15 +172,15 @@
   </p>
 
   <div class="info-contacto">
-    <p><i class="fas fa-phone"></i> <a href="tel:+573001234567">+57 300 123 4567</a></p>
-    <p><i class="fas fa-envelope"></i> <a href="mailto:paula.ramos@email.com">paula.ramos@email.com</a></p>
+    <p><i class="fas fa-phone"></i> <a href="tel:+573001234567">+57 313 837 0048</a></p>
+    <p><i class="fas fa-envelope"></i> <a href="mailto:paula.ramos@email.com">paulaandrearamospinzon@outlook.com</a></p>
     <p><i class="fas fa-map-marker-alt"></i> Bogotá, Colombia</p>
 
     <div class="redes-sociales">
-      <a href="https://www.linkedin.com/in/paularamos" target="_blank" aria-label="LinkedIn">
+      <a href="https://www.linkedin.com/in/paularamosof" target="_blank" aria-label="LinkedIn">
         <i class="fab fa-linkedin"></i>
       </a>
-      <a href="https://github.com/paularamos" target="_blank" aria-label="GitHub">
+      <a href="https://github.com/PaulaRamosof" target="_blank" aria-label="GitHub">
         <i class="fab fa-github"></i>
       </a>
       <a href="https://www.instagram.com/paularamosdesign" target="_blank" aria-label="Instagram">

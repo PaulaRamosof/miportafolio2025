@@ -3,11 +3,11 @@ Faltantes de mi Repositorio:
 1.Mejorar apariencia de:
 
 --->Configurar 2 Tipografias para las letras (css)
-*   Header (imagen y letra);
-*   Hero (ancho de margen,altura de la letra+mi foto e caricatura);
+*   Header (imagen y letra);OK
+*   Hero (ancho de margen,altura de la letra+mi foto e caricatura);OK
 *   Body animación en la que el puntero anime el background;
 *   Sobre mí (fondo,letra);
-*   Habilidades (fondo,letra)+ adjuntar cv;
+*   Habilidades (fondo,letra)+ adjuntar cv;OK
 *   Proyectos (alinear mejor las cards + conectar "bacanisimo" + agregar imagenes del preview de proyectos )
 *   Contacto (fondo,letra) cfrear botones animados para que se amplie la opcion del metodo de contacto.
 *   Footer (imagen gradiente de "amarillo" y copyright); 

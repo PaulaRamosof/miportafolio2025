@@ -5,7 +5,7 @@
   --rosa-claro: #F4E9E9;
   --rosa-brillante: #FB01A9;
   --naranja: #FB5D00;
-  --fuente-principal: 'Inter', sans-serif;
+  --fuente-principal: 'lilita', sans-serif;
   --fuente-secundaria: 'Kanit', sans-serif;
 }
 
@@ -19,15 +19,16 @@ body {
   font-family: var(--fuente-principal);
   background-color: var(--rosa-claro);
   color: var(--negro);
-  line-height: 1.6;
-  padding-top: 60px;
-  margin: 5% 10%
+  line-height: 1;
+  padding-top: 0px;
+  margin: 0% 0%
 }
 
 .amarillo {
   background: linear-gradient(270deg, var(--amarillo), var(--rosa-brillante), var(--naranja));
   background-size: 600% 600%;
-  animation: moverFondo 8s ease infinite;
+  animation: moverFondo 10s ease infinite;
+  
 }
 
 @keyframes moverFondo {
@@ -38,8 +39,9 @@ body {
 
 /* 🔶 Franja superior */
 .franja-superior .amarillo {
-  height: 28px;
+  height: 15px;
   width: 100%;
+  
 }
 
 /* 🧠 Header */
@@ -52,7 +54,7 @@ body {
   justify-content: center;
   text-align: center;
   padding: 10px 20px;
-  color: #fff;
+  color: #000000;
   position: relative;
 }
 .video-bg {
@@ -62,9 +64,10 @@ body {
   transform: translate(-50%, -50%);
   min-width: 100%;
   min-height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   z-index: 0;
-  opacity: 1; /* Puedes ajustar esto para más o menos visibilidad */
+  opacity: 1.1; /* Puedes ajustar esto para más o menos visibilidad */
+
 }
 
 .header::before {
@@ -80,7 +83,11 @@ body {
   z-index: 1;
   max-width: 100%;
   padding: 2rem;
-  color:white
+  color:#F4E9E9;
+  text-shadow: 4px 4px 6px rgba(12, 1, 14, 0.6);
+  font-family: var(--fuente-secundaria);
+  font-weight: 700;
+;
 }
 
 .etiqueta {
@@ -99,51 +106,51 @@ body {
 
 /* 🧭 Navbar con Bootstrap */
 .navbar {
-  background-color: var(--rosa-brillante);
   font-family: var(--fuente-secundaria);
-  padding: 15px 20px;
+  padding: 9px 20px;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-.navbar-brand {
-  color: white;
-  font-size: 1.8rem;
-  font-weight: bold;
+/* Enlaces */
+
+.nav-link {  
+  font-size:medium;
+  font-family:var(--fuente-secundaria);
+  color: #F4E9E9;
+  margin-right: 30px;
+  transition: all 0.3s ease;
 }
 
-.navbar-brand:hover {
-  color: var(--amarillo);
+.nav-link:hover {
+  background-color: #F4E9E9;  
+  font-family:var(--fuente-secundaria);
+  color: #000000;
+  border-radius: 5px;
 }
 
-.navbar-nav .nav-link {
-  color: white;
-  font-weight: bold;
-  margin-right: 10px;
-}
-
-.navbar-nav .nav-link:hover {
-  color: var(--amarillo-claro);
-}
-
+/* Botón hamburguesa */
 .navbar-toggler {
   border: none;
+  outline: none;
 }
 
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 30 30'%3E%3Cpath d='M4 7h22v2H4zm0 7h22v2H4zm0 7h22v2H4z'/%3E%3C/svg%3E");
+/* Responsive: centrar texto en móviles */
+@media (max-width: 991px) {
+  .navbar-nav {
+    text-align: center;
+  }
 }
-
 /* 👋 Hero */
 .hero {
-  background-image: url('fallback.jpg');
+  background-color:var(--rosa-claro);
   background-size: cover;
   background-position: center;
-  padding: 4rem 2rem;
-  min-height: 60vh; /* ✅ Esto da una sensación de sección destacada */
+  padding: 2rem 1rem;
+  min-height: 40vh; /* ✅ Esto da una sensación de sección destacada */
   display: flex;
-  align-items: center;
+  align-items:normal;
  
 }
 
@@ -153,10 +160,11 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 3rem;
-  max-width: 900px;
+  gap: 2rem;
+  max-width: auto;
   height: auto; 
   margin: 0 auto;
+  background-color: var(--rosa-claro);
 }
 
 .hero-text {
@@ -182,22 +190,24 @@ body {
 
 .hero-text h1 {
   font-size: 2.5rem;
-  color: #d95d39;
+  font-family: var(--fuente-secundaria);
+  color:var(--rosa-brillante);
   margin-bottom: 1rem;
   line-height: 1.2;
 }
 
 .hero-text p {
   font-size: 1.1rem;
-  color: #333;
+  font: var(--fuente-secundaria);
+  color: #000000;
   margin-bottom: 1.5rem;
   line-height: 1.6;
 
 }
 
 .btn-hero {
-  background-color: #d95d39;
-  color: #fff;
+  background-color:var(--rosa-brillante);
+  color: #000000;
   padding: 0.8rem 1.5rem;
   border-radius: 5px;
   text-decoration: none;
@@ -228,7 +238,7 @@ body {
 }
 
 .btn-hero:hover {
-  background-color: #b94428;
+  background-color:var(--amarillo-claro);
 }
 
 .hero-img {
@@ -254,19 +264,23 @@ body {
 }
 
 .mis-proyectos h2 {
-  font-size: 2rem;
-  color: #d95d39;
+  font-size: 2.5rem;
+  color: var(--naranja);
   margin-bottom: 2rem;
 }
 
 .grid-proyectos {
-  display: grid;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-auto-rows: 1fr;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
   place-items: center;
+  height: 100%;
 }
    
 /*cards de los proyectos*/
@@ -277,7 +291,9 @@ body {
   padding: 1rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, opacity 0.5s ease; /* Transición suave para transform y opacity */
-  height: 100%;
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -298,35 +314,41 @@ body {
 /* 👩‍💻 Sobre mí */
 .sobre-mi {
   padding: 3rem 2rem;
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 90%;
+  margin: 20px auto;
+  background-color: var(--rosa-claro);
 }
 
 .sobre-mi h2 {
+  display:block;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-family: var(--fuente-secundaria);
   text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-  color: #d95d39;
+  color: #e64a19;
 }
 
 .sobre-mi p {
   margin-bottom: 1.5rem;
-  font-size: 1.1rem;
+  font-size: 1.0rem;
+  font-family: var(--fuente-secundaria);
   line-height: 1.6;
+  text-align: center;
 }
 
 /* Habilidades */
 .cv-habilidades {
   padding: 3rem 2rem;
-  background-color: #fdf6f0;
+  
   color: #333;
 }
 
 .cv-habilidades h2 {
   text-align: center;
   margin-bottom: 2rem;
-  font-size: 2rem;
-  color: #d95d39;
+  font-size: 2.5rem;
+  font-family: var(--fuente-secundaria);
+  color: var(--naranja);
 }
 
 .habilidades-container {
@@ -376,7 +398,7 @@ ul li::before {
 }
 
 .btn-descarga {
-  background-color: #d95d39;
+  background-color: var(--rosa-brillante);
   color: #fff;
   padding: 0.8rem 1.5rem;
   border-radius: 5px;
@@ -387,7 +409,9 @@ ul li::before {
 }
 
 .btn-descarga:hover {
-  background-color: #b94428;
+  background-color: #EFDE75;
+  color: #000000;
+  
 }
 
 /* 📬 Contacto */
@@ -399,8 +423,9 @@ ul li::before {
 
 .contacto h2 {
   font-size: 2.5rem;
+  font-family: var(--fuente-secundaria);
   margin-bottom: 20px;
-  color: #343a40;
+  color: var(--naranja);
 }
 
 .intro-contacto {
