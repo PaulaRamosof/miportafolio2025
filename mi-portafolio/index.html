@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lilita+One&display=swap" rel="stylesheet">    
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="css/styles.css" />
@@ -100,67 +101,144 @@
   <!-- 📝 Sección de habilidades y descarga de CV -->
 
 <section class="cv-habilidades" id="habilidades">
-  <h2 class="fade-slide">Habilidades</h2>
+  <h2 class="titulo-habilidades">Habilidades</h2>
 
   <div class="habilidades-container">
-    <div class="habilidades-duras fade-slide delay-1">
-      <h3>💻 Habilidades Técnicas</h3>
-      <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>Figma y prototipado UX/UI</li>
-        <li>Diseño responsivo y Bootstrap</li>
-        <li>Accesibilidad web</li>
-        <li>Excel intermedio</li>
-        <li>Oracle (gestión de inventarios)</li>
-        <li>Software de recolección de datos</li>
+    
+    <!-- Habilidades Técnicas -->
+    <div class="habilidades-duras">
+      <h3><i class="bi bi-pc-display"></i>Habilidades Técnicas</h3>
+      <ul class="lista-habilidades">
+        <li>
+          <img src="assets/img/icons/html.png" alt="HTML, CSS, JS" class="icono-habilidad">
+          <img src="assets/img/icons/css.png" alt="HTML, CSS, JS" class="icono-habilidad">
+          <img src="assets/img/icons/js.png" alt="HTML, CSS, JS" class="icono-habilidad">
+          HTML, CSS, JavaScript
+        </li>
+        <li>
+          <img src="assets/img/icons/figma.png" alt="Figma" class="icono-habilidad">
+          Figma y prototipado UX/UI
+        </li>
+        <li>
+          <img src="assets/img/icons/Bootstrap.png" alt="Bootstrap" class="icono-habilidad">
+          Diseño responsivo y Bootstrap
+        </li>   
+        <li>
+          <img src="assets/img/icons/excel.png" alt="Excel" class="icono-habilidad">
+          Excel intermedio
+        </li>
+        <li>
+          <img src="assets/img/icons/oracle.png" alt="Oracle" class="icono-habilidad">
+          Oracle (gestión de inventarios-programación de eventos)
+        </li>
+        <li>
+          <img src="assets/img/icons/sql.png" alt="Recolección de datos" class="icono-habilidad">
+          <img src="assets/img/icons/java.png" alt="Recolección de datos" class="icono-habilidad">
+          <img src="assets/img/icons/postman.png" alt="Recolección de datos" class="icono-habilidad">
+          SQL,JAVA y Postman (recolección y análisis de datos)
+        </li>
       </ul>
     </div>
 
-    <div class="habilidades-blandas fade-slide delay-2">
-      <h3>🌱 Habilidades Blandas</h3>
-      <ul>
-        <li>Aprendizaje rápido</li>
-        <li>Empatía y comunicación asertiva</li>
-        <li>Trabajo en equipo</li>
-        <li>Liderazgo emocional</li>
-        <li>Organización y gestión de procesos</li>
-        <li>Adaptabilidad a entornos exigentes</li>
+    <!-- Habilidades Blandas -->
+    <div class="habilidades-blandas">
+      <h3><i class="bi bi-people"></i> Habilidades Blandas</h3>
+      <ul class="lista-habilidades">
+        <li>
+          <img src="assets/img/icons/1.png" alt="Aprendizaje rápido" class="icono-habilidad">
+          Aprendizaje rápido
+        </li>
+        <li>
+          <img src="assets/img/icons/2.png" alt="Comunicación" class="icono-habilidad">
+          Empatía y comunicación asertiva
+        </li>
+        <li>
+          <img src="assets/img/icons/3.png" alt="Trabajo en equipo" class="icono-habilidad">
+          Trabajo en equipo
+        </li>
+        <li>
+          <img src="assets/img/icons/4.png" alt="Liderazgo emocional" class="icono-habilidad">
+          Liderazgo emocional
+        </li>
+        <li>
+          <img src="assets/img/icons/5.png" alt="Organización" class="icono-habilidad">
+          Organización y gestión de procesos
+        </li>
+        <li>
+          <img src="assets/img/icons/6.png" alt="Adaptabilidad" class="icono-habilidad">
+          Adaptabilidad a entornos exigentes
+        </li>
       </ul>
     </div>
+
   </div>
+</section>
 
   <div class="cv-descarga fade-slide delay-3">
-    <a href="CVversionfinal.pdf" download class="btn-descarga">📄 Descargar CV</a>
+    <a href="assets/img/icons/PaulaRamosCV.pdf" download class="btn-descarga">📄 Descargar CV</a>
   </div>
 </section>
   <!-- Card de 6 proyectos -->
-  <section class="mis-proyectos" id="proyectos">
+<section class="mis-proyectos" id="proyectos">
   <h2>Mis Proyectos</h2>
   <div class="grid-proyectos">
-    
+
+    <!-- Proyecto 1 -->
     <div class="card-proyecto">
-      <img src="img/proyecto1.png" alt="Bacanísimo">
+      <div class="carousel">
+        <div class="carousel-track">
+          <img src="assets/img/icons/Bacanisimo1.png" alt="Vista 1 Bacanísimo">
+          <img src="assets/img/icons/Bacanisimo2.png" alt="Vista 2 Bacanísimo">
+          <img src="assets/img/icons/Bacanisimo3.png" alt="Vista 3 Bacanísimo">
+        </div>
+      </div>
       <h3>Bacanísimo</h3>
       <p>Proyecto 1</p>
+      <a href="https://paularamosof.github.io/PROYECTO1-Portafolio-Paula2025/" target="_blank" rel="noopener noreferrer" class="btn-proyecto">Ver proyecto</a>
     </div>
 
+    <!-- Proyecto 2 -->
     <div class="card-proyecto">
-      <img src="img/proyecto2.png" alt="ABC Ingles para niños">
-      <h3>ABC Ingles para niños</h3>
+      <div class="carousel">
+        <div class="carousel-track">
+          <img src="assets/img/icons/ABC1.png" alt="Vista 1 Proyecto 2">
+          <img src="assets/img/icons/ABC12.png" alt="Vista 2 Proyecto 2">
+          <img src="assets/img/icons/ABC3.png" alt="Vista 3 Proyecto 2">
+        </div>
+      </div>
+      <h3>ABC Inglés para niños</h3>
       <p>Proyecto 2</p>
+      <a href="https://paularamosof.github.io/PROYECTO2-Portafolio-Paula2025-/" target="_blank" rel="noopener noreferrer" class="btn-proyecto">Ver proyecto</a>
     </div>
 
+    <!-- Proyecto 3 -->
     <div class="card-proyecto">
-      <img src="img/proyecto3.png" alt="Proyecto JUNTO">
-      <h3>Proyecto JUNTO </h3>
+      <div class="carousel">
+        <div class="carousel-track">
+          <img src="assets/img/icons/APINasa1.png" alt="Vista 1 Proyecto JUNTO">
+          <img src="assets/img/icons/APINasa2.png" alt="Vista 2 Proyecto JUNTO">
+          <img src="assets/img/icons/APINasa3.png" alt="Vista 3 Proyecto JUNTO">
+        </div>
+      </div>
+      <h3>API Nasa</h3>
       <p>Proyecto 3</p>
+      <a href="https://paularamosof.github.io/APINasa/" target="_blank" rel="noopener noreferrer" class="btn-proyecto">Ver proyecto</a>
     </div>
 
+    <!-- Proyecto 4 -->
     <div class="card-proyecto">
-      <img src="img/proyecto4.png" alt="Elige tu POKEMON">
-      <h3>Elige tu POKEMON</h3>
+      <div class="carousel">
+        <div class="carousel-track">
+          <img src="assets/img/icons/LaCafetalera1.png" alt="Vista 1 Pokémon">
+          <img src="assets/img/icons/LaCafetalera2.png" alt="Vista 2 Pokémon">
+          <img src="assets/img/icons/LaCafetalera3.png" alt="Vista 3 Pokémon">
+        </div>
+      </div>
+      <h3>La Cafetalera</h3>
       <p>Proyecto 4</p>
+      <a href="https://github.com/SebastianHernandezDev/LaCafetalera" target="_blank" rel="noopener noreferrer" class="btn-proyecto">Ver proyecto</a>
     </div>
+
   </div>
 </section>
  

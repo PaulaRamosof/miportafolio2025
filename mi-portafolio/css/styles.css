@@ -270,35 +270,69 @@ body {
 }
 
 .grid-proyectos {
-  display:flex;
-  flex-direction: column;
-  justify-content: space-between;
-  grid-auto-rows: 1fr;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
-  place-items: center;
-  height: 100%;
+  padding: 2rem 15px;
 }
-   
-/*cards de los proyectos*/
+
 .card-proyecto {
   background-color: #fff;
   border: 3px solid #f6c90e;
   border-radius: 10px;
   padding: 1rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, opacity 0.5s ease; /* Transición suave para transform y opacity */
-  height: 150px;
-  width: 100%;
-  object-fit: cover;
+  text-align: center;
+  height: 380px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  opacity: 0; /* Inicialmente oculto */
-  transform: translateY(20px); /* Desplazado hacia abajo */
+  overflow: hidden;
+}
+
+
+.card-proyecto img {
+  width: 100%;
+  height: 50px; /* puedes ajustar este valor según el diseño */
+  object-fit: contain;
+  border-radius: 8px;
+  background-color: #fff; /* útil si la imagen tiene fondo transparente */
+}
+
+.card-proyecto > img {
+  height: 50px;
+  object-fit: contain;
+}
+
+.carousel {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.carousel-track {
+  display: flex;
+  animation: slide 9s infinite;
+}
+
+.carousel-track:hover {
+  animation-play-state: paused;
+}
+
+.carousel-track img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  flex-shrink: 0;
+  padding: 0.5rem;
 }
 
 .card-proyecto.visible {
@@ -309,6 +343,30 @@ body {
 .card-proyecto:hover {
   transform: translateY(-5px); /* Efecto hover */
 }
+
+@keyframes slide {
+  0%   { transform: translateX(0%); }
+  33%  { transform: translateX(-100%); }
+  66%  { transform: translateX(-200%); }
+  100% { transform: translateX(0%); }
+}
+
+.btn-proyecto {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #f6c90e;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-proyecto:hover {
+  background-color: #e0b80d;
+}
+
 
 
 /* 👩‍💻 Sobre mí */
@@ -338,41 +396,61 @@ body {
 
 /* Habilidades */
 .cv-habilidades {
-  padding: 3rem 2rem;
-  
-  color: #333;
-}
-
-.cv-habilidades h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2.5rem;
-  font-family: var(--fuente-secundaria);
-  color: var(--naranja);
-}
-
-.habilidades-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  max-width: 1000px;
+  padding: 2rem 15px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-.habilidades-duras, .habilidades-blandas {
-  flex: 1 1 300px;
-  background-color: #fff;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  min-width: 250px;
+
+.titulo-habilidades {
+  text-align: center;
+  font-size: 2rem;
+  color: #f6c90e;
+  margin-bottom: 2rem;
 }
 
-.habilidades-duras h3, .habilidades-blandas h3 {
-  margin-bottom: 1rem;
-  color: #d95d39;
+
+.habilidades-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 }
+
+
+.habilidades-duras,
+.habilidades-blandas {
+  background-color: #fff;
+  border: 2px solid #f6c90e;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+
+}
+
+.lista-habilidades {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-habilidades li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.icono-habilidad {
+  width: auto;
+  height: 50px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.lista-habilidades li:hover .icono-habilidad {
+  transform: scale(1.2) rotate(5deg);
+}
+
 
 ul {
   list-style: none;
