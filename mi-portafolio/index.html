@@ -10,16 +10,31 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lilita+One&display=swap" rel="stylesheet">    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
 <!-- 🔶 Franja superior decorativa -->
-<section class="franja-superior" id="inicio">
-  <div class="amarillo"></div>
-</section>
+
+<!-- 🧠 Header con branding -->
+<header class="header">
+  <video autoplay muted loop playsinline class="video-bg">
+    <source src="../mi-portafolio/assets/img/icons/videoHeader.mp4" type="video/mp4">
+    Tu navegador no soporta videos HTML5.
+  </video>
+
+  <div class="header-content">
+    <h1 class="etiqueta">Paula Ramos</h1>
+    <p class="subtitulo">
+      UX/UI con propósito | Diseño emocional | HTML/CSS | JS | Figma | Prototipado | Accesibilidad
+    </p>
+  </div>
+</header>
 
 <!-- Navbar fija con scroll suave y enlaces conectados -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -31,10 +46,19 @@
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center"> 
-          <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>      
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#sobre-mi">Sobre mi</a>
-          <a class="nav-link" href="#habilidades">Habilidades</a>        
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#habilidades">Habilidades</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#proyectos">Mis Proyectos</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#contacto">Contacto</a>
         </li>
       </ul>
@@ -53,61 +77,63 @@
   });
 </script>
 
+<section class="franja-superior" id="inicio">
+  <div class="amarillo"></div>
+</section>
 
-
-<!-- 🧠 Header con branding -->
-<header class="header">
-  <video autoplay muted loop playsinline class="video-bg">
-    <source src="../mi-portafolio/assets/img/icons/videoHeader.mp4" type="video/mp4">
-    Tu navegador no soporta videos HTML5.
-  </video>
-
-  <div class="header-content">
-    <h1 class="etiqueta">Paula Ramos</h1>
-    <p class="subtitulo">
-      UX/UI con propósito | Diseño emocional | HTML/CSS | JS | Figma | Prototipado | Accesibilidad
-    </p>
-  </div>
-</header>
-
-
-  <!-- 👋 Hero de bienvenida -->
+<!-- 👋 Hero de bienvenida -->
 <section class="hero" id="inicio">
+  <div id="particles-js"></div> 
   <div class="hero-content">
-    <div class="hero-img">
-      <img src="/mi-portafolio/assets/img/fotopaula.png" alt="Paula Ramos">
-  </div>
-  <div class="hero-text">
-      <h1>¡Hola! Soy Paula Ramos 👋</h1>
-      <p>Desarrolladora junior con enfoque en diseño UX/UI, bases de datos y una curiosidad creciente por la inteligencia artificial. Este es mi espacio para compartir lo que estoy aprendiendo y construir mi camino en tecnología con propósito.</p>
-      <a href="#proyectos" class="btn-hero">Ver mis proyectos</a>
+    <!-- Imagen con animación -->
+    <div class="hero-img fade-in-left">
+      <img src="assets/img/icons/photo.png" alt="Paula Ramos">
+    </div>
+
+    <!-- Texto con entrada suave -->
+    <div class="hero-text fade-in-right">
+      <h1>¡Hola! Soy <span class="nombre">Paula Ramos  </span><i class="bi bi-emoji-laughing-fill"></i></h1>
+      <p>
+        Desarrolladora junior con enfoque en <strong>diseño UX/UI</strong>, <strong>bases de datos</strong> y una curiosidad creciente por la <strong>inteligencia artificial</strong>.
+        Este es mi espacio para compartir lo que estoy aprendiendo y construir mi camino en tecnología con propósito.
+      </p>
+      <a href="#proyectos" class="btn-hero"><i class="bi bi-rocket-takeoff"></i> Ver mis proyectos</a>
     </div>
   </div>
 </section>
 
-  <!-- 📝 Sección "Sobre mí" -->
-<section class="sobre-mi"id="sobre-mi">
-  <h2 class="fade-slide">Sobre mí</h2>
-  <p class="fade-slide delay-1">
-    Soy Paula Ramos, desarrolladora junior en formación con enfoque en UX/UI, bases de datos y una curiosidad creciente por la inteligencia artificial.
-    Mi experiencia liderando equipos y procesos me enseñó a trabajar con datos, herramientas como Oracle y Excel, y a tomar decisiones con empatía y precisión.
-  </p>
-  <p class="fade-slide delay-3">
-    Hoy, cada línea de código que escribo es parte de mi evolución: diseño accesible, desarrollo con propósito y tecnología como puente humano.
-    Este portafolio es mi punto de partida. Estoy aprendiendo, creciendo y lista para aportar.
-  </p>
+<!-- 📝 Sección "Sobre mí" -->
+<section class="sobre-mi" id="sobre-mi">
+  <div class="sobre-mi-container fade-slide">
+    <h2>Sobre mí</h2>
+
+    <div class="sobre-mi-content">
+      <div class="sobre-mi-text">
+        <p class="delay-1">
+          <strong>Soy Paula Ramos</strong>, desarrolladora junior en formación con enfoque en <span class="resaltado">UX/UI</span>, <span class="resaltado">bases de datos</span> y una curiosidad creciente por la <span class="resaltado">inteligencia artificial</span>.
+          Mi experiencia liderando equipos y procesos me enseñó a trabajar con datos, herramientas como <span class="resaltado">Oracle</span> y <span class="resaltado">Excel</span>, y a tomar decisiones con empatía y precisión.
+        </p>
+
+        <p class="delay-3">
+          Hoy, cada línea de código que escribo es parte de mi evolución: <span class="resaltado">diseño accesible</span>, <span class="resaltado">desarrollo con propósito</span> y <span class="resaltado">tecnología como puente humano</span>.
+          Este portafolio es mi punto de partida. Estoy aprendiendo, creciendo y <strong>lista para aportar</strong>.
+        </p>
+        <div class="cv-descarga">
+          <a href="assets/img/icons/PaulaRamosCV.pdf" class="btn-descarga" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-text"></i> Descargar CV</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-  <!-- 📝 Sección de habilidades y descarga de CV -->
-
+<!-- 📝 Sección de habilidades y descarga de CV -->
 <section class="cv-habilidades" id="habilidades">
   <h2 class="titulo-habilidades">Habilidades</h2>
 
   <div class="habilidades-container">
-    
     <!-- Habilidades Técnicas -->
     <div class="habilidades-duras">
-      <h3><i class="bi bi-pc-display"></i>Habilidades Técnicas</h3>
+      <h3><i class="bi bi-pc-display"></i> Habilidades Técnicas</h3>
       <ul class="lista-habilidades">
         <li>
           <img src="assets/img/icons/html.png" alt="HTML, CSS, JS" class="icono-habilidad">
@@ -132,10 +158,10 @@
           Oracle (gestión de inventarios-programación de eventos)
         </li>
         <li>
-          <img src="assets/img/icons/sql.png" alt="Recolección de datos" class="icono-habilidad">
-          <img src="assets/img/icons/java.png" alt="Recolección de datos" class="icono-habilidad">
-          <img src="assets/img/icons/postman.png" alt="Recolección de datos" class="icono-habilidad">
-          SQL,JAVA y Postman (recolección y análisis de datos)
+          <img src="assets/img/icons/sql.png" alt="SQL" class="icono-habilidad">
+          <img src="assets/img/icons/java.png" alt="Java" class="icono-habilidad">
+          <img src="assets/img/icons/postman.png" alt="Postman" class="icono-habilidad">
+          SQL, JAVA y Postman (recolección y análisis de datos)
         </li>
       </ul>
     </div>
@@ -170,18 +196,13 @@
         </li>
       </ul>
     </div>
-
   </div>
 </section>
 
-  <div class="cv-descarga fade-slide delay-3">
-    <a href="assets/img/icons/PaulaRamosCV.pdf" download class="btn-descarga">📄 Descargar CV</a>
-  </div>
-</section>
-  <!-- Card de 6 proyectos -->
+<!-- Card de proyectos -->
 <section class="mis-proyectos" id="proyectos">
-  <h2>Mis Proyectos</h2>
-  <div class="grid-proyectos">
+    <h2>Mis Proyectos</h2>
+    <div class="grid-proyectos">
 
     <!-- Proyecto 1 -->
     <div class="card-proyecto">
@@ -194,7 +215,7 @@
       </div>
       <h3>Bacanísimo</h3>
       <p>Proyecto 1</p>
-      <a href="https://paularamosof.github.io/PROYECTO1-Portafolio-Paula2025/" target="_blank" rel="noopener noreferrer" class="btn-proyecto">Ver proyecto</a>
+      <a href="https://paularamosof.github.io/PROYECTO1-Portafolio-Paula2025/" target="_blank" rel="noopener noreferrer" class="btn-proyecto"><i class="bi bi-eye"></i>  Ver proyecto</a>
     </div>
 
     <!-- Proyecto 2 -->
@@ -208,7 +229,7 @@
       </div>
       <h3>ABC Inglés para niños</h3>
       <p>Proyecto 2</p>
-      <a href="https://paularamosof.github.io/PROYECTO2-Portafolio-Paula2025-/" target="_blank" rel="noopener noreferrer" class="btn-proyecto">Ver proyecto</a>
+      <a href="https://paularamosof.github.io/PROYECTO2-Portafolio-Paula2025-/" target="_blank" rel="noopener noreferrer" class="btn-proyecto"><i class="bi bi-eye"></i>  Ver proyecto</a>
     </div>
 
     <!-- Proyecto 3 -->
@@ -222,7 +243,7 @@
       </div>
       <h3>API Nasa</h3>
       <p>Proyecto 3</p>
-      <a href="https://paularamosof.github.io/APINasa/" target="_blank" rel="noopener noreferrer" class="btn-proyecto">Ver proyecto</a>
+      <a href="https://paularamosof.github.io/APINasa/" target="_blank" rel="noopener noreferrer" class="btn-proyecto"><i class="bi bi-eye"></i> Ver proyecto</a>
     </div>
 
     <!-- Proyecto 4 -->
@@ -236,48 +257,89 @@
       </div>
       <h3>La Cafetalera</h3>
       <p>Proyecto 4</p>
-      <a href="https://github.com/SebastianHernandezDev/LaCafetalera" target="_blank" rel="noopener noreferrer" class="btn-proyecto">Ver proyecto</a>
+      <a href="https://github.com/SebastianHernandezDev/LaCafetalera" target="_blank" rel="noopener noreferrer" class="btn-proyecto"><i class="bi bi-eye"></i> Ver proyecto</a>
     </div>
 
   </div>
 </section>
- 
+
 <!-- 📬 Contacto -->
 <section class="contacto" id="contacto">
-  <h2>¿Hablamos?</h2>
+  <h2 class="titulo-contacto">¿Hablamos?</h2>
   <p class="intro-contacto">
     Si algo en mi trabajo resonó contigo, si tienes una idea que quieres explorar, o simplemente quieres saludar, estaré feliz de leerte. ¡Conectemos y creemos algo significativo juntos!
   </p>
 
   <div class="info-contacto">
-    <p><i class="fas fa-phone"></i> <a href="tel:+573001234567">+57 313 837 0048</a></p>
-    <p><i class="fas fa-envelope"></i> <a href="mailto:paula.ramos@email.com">paulaandrearamospinzon@outlook.com</a></p>
-    <p><i class="fas fa-map-marker-alt"></i> Bogotá, Colombia</p>
+    <div class="contacto-item">
+      <i class="fas fa-phone icono-contacto"></i>
+      <a href="tel:+573001234567" class="contacto-link">+57 313 837 0048</a>
+    </div>
+    <div class="contacto-item">
+      <i class="fas fa-envelope icono-contacto"></i>
+      <a href="mailto:paula.ramos@email.com" class="contacto-link">paulaandrearamospinzon@outlook.com</a>
+    </div>
+    <div class="contacto-item">
+      <i class="fas fa-map-marker-alt icono-contacto"></i>
+      <span>Bogotá, Colombia</span>
+    </div>
 
     <div class="redes-sociales">
-      <a href="https://www.linkedin.com/in/paularamosof" target="_blank" aria-label="LinkedIn">
+      <a href="https://www.linkedin.com/in/paularamosof" target="_blank" aria-label="LinkedIn" class="red-social">
         <i class="fab fa-linkedin"></i>
       </a>
-      <a href="https://github.com/PaulaRamosof" target="_blank" aria-label="GitHub">
+      <a href="https://github.com/PaulaRamosof" target="_blank" aria-label="GitHub" class="red-social">
         <i class="fab fa-github"></i>
       </a>
-      <a href="https://www.instagram.com/paularamosdesign" target="_blank" aria-label="Instagram">
+      <a href="https://www.instagram.com/paularamosdesign" target="_blank" aria-label="Instagram" class="red-social">
         <i class="fab fa-instagram"></i>
       </a>
     </div>
   </div>
 </section>
 
-  <!-- 🟡 Franja inferior decorativa -->
-  <section class="pendiente">
-    <div class="amarillobb"></div>
-  </section>
 
-  <!-- 🧾 Footer -->
-  <footer>
-    <p>© Paula Ramos 2025</p>
-  </footer>
+<!-- 🟡 Franja inferior decorativa -->
+<section class="franja-superior" id="inicio">
+  <div class="amarillo"></div>
+</section>
 
-  <script src="js/main.js"></script>
+<!-- 🧾 Footer -->
+<footer>
+  <p>© Paula Ramos 2025</p>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  particlesJS("particles-js", {
+    "particles": {
+      "number": { "value": 50 },
+      "color": { "value": "#FB01A9" },
+      "shape": { "type": "circle" },
+      "opacity": { "value": 0.5 },
+      "size": { "value": 4 },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#f6c90e",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 2,
+        "direction": "none",
+        "out_mode": "bounce"
+      }
+    },
+    "interactivity": {
+      "events": {
+        "onhover": { "enable": true, "mode": "repulse" },
+        "onclick": { "enable": true, "mode": "push" }
+      }
+    },
+    "retina_detect": true
+  });
+</script>
 </body>
 </html>
