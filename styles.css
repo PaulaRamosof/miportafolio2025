@@ -169,7 +169,18 @@ header .header-content,
 
 .navbar-toggler {
   border: none;
-  outline: none;
+  background: transparent;
+  font-size: 1.5rem;
+}
+
+.navbar-extra {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+}
+
+.marca {
+  font-weight: 600;
+  font-size: 1.1rem;
 }
 
 /* Hero */
@@ -1078,6 +1089,113 @@ footer:hover {
   footer {
     font-size: 0.9rem;
     padding: 1rem 0.5rem;
+  }
+}
+
+/* Celulares pequeños (<480px) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .hero-img img {
+    width: 220px;
+  }
+
+  .btn-hero, .btn-proyecto {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+    min-height: 44px;
+  }
+
+  .grid-proyectos {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .contacto-item {
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablets (481px - 1024px) */
+@media (min-width: 481px) and (max-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .grid-proyectos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .carousel {
+    height: 150px;
+  }
+
+  .sobre-mi {
+    padding: 2rem 1rem;
+  }
+}
+
+/* Laptops y pantallas grandes (>1024px) */
+@media (min-width: 1025px) {
+  body {
+    font-size: 16px;
+  }
+
+  .hero {
+    padding: 4rem 2rem;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+
+  .grid-proyectos {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .carousel {
+    height: 200px;
+  }
+
+  .sobre-mi {
+    padding: 3rem 2rem;
+  }
+
+  .titulo-contacto {
+    font-size: 3rem;
+  }
+}
+
+/* Ultra grandes (>1440px) */
+@media (min-width: 1440px) {
+  .grid-proyectos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .hero-text h1 {
+    font-size: 3.5rem;
+  }
+
+  .btn-hero, .btn-proyecto {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
   }
 }
 
